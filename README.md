@@ -1,6 +1,6 @@
-# book-ai-and-machine-learning-a-quick-start-guide
 
-Book title: **AI and Machine Learning: A Quick Start Guide**
+# AI and Machine Learning: A Quick Start Guide
+
 
 ## About
 
