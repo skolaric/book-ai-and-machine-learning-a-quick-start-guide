@@ -26,7 +26,7 @@ graph LR
     class GenAI level4
 ```
 
-In conventional computing, a human-written program accepts input data and processes it to generate output, as shown in the following figure:
+In conventional computing, a human-written program accepts input data and processes it to generate output:
 
 ```mermaid
 graph LR
