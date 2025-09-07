@@ -13,10 +13,10 @@ graph LR
     end
     
     %% Styling
-    classDef level1 fill:#e3f2fd,stroke:#000000,stroke-width:4px,rx:15,ry:15
-    classDef level2 fill:#f3e5f5,stroke:#000000,stroke-width:3px,rx:15,ry:15
-    classDef level3 fill:#e8f5e8,stroke:#000000,stroke-width:3px,rx:15,ry:15
-    classDef level4 fill:#fff3e0,stroke:#000000,stroke-width:3px,rx:15,ry:15
+    classDef level1 fill:#e3f2fd,stroke:#000000,stroke-width:4px,rx:15,ry:15,color:#000000
+    classDef level2 fill:#f3e5f5,stroke:#000000,stroke-width:3px,rx:15,ry:15,color:#000000
+    classDef level3 fill:#e8f5e8,stroke:#000000,stroke-width:3px,rx:15,ry:15,color:#000000
+    classDef level4 fill:#fff3e0,stroke:#000000,stroke-width:3px,rx:15,ry:15,color:#000000
     
     class AI level1
     class ML level2
