@@ -125,7 +125,7 @@ This generalized framework allows any AI platform to implement online learning b
 
 ## Overall Architecture
 
-![Data Flow](./images/overall-architecture.svg)
+![Overall Architecture](./images/overall-architecture.png)
 
 This comprehensive system architecture diagram illustrates how a cloud platform implementing the generalized online learning framework would be structured. Here are the key architectural components:
 
