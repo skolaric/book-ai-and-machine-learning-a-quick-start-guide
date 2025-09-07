@@ -26,11 +26,11 @@ graph LR
     class GenAI level4
 ```
 
-In conventional computing, a human-written program accepts input data and processes it to generate output:
+In conventional computing, a human-written program accepts input data and processes it to generate output data:
 
 ```mermaid
 graph LR
-    A[Input] --> B[Program] --> C[Output]
+    A[Input Data] --> B[Program] --> C[Output Data]
     
     %% Styling
     classDef inputStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,rx:10,ry:10,color:#000000
@@ -41,3 +41,5 @@ graph LR
     class B programStyle
     class C outputStyle
 ```
+
+In ML however, we use input data AND output data to generate the program:
