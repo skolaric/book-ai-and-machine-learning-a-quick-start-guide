@@ -1,0 +1,233 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+    <linearGradient id="inputGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="contextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f3e5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1bee7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8f5e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="outputGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+    
+  <!-- Input Layer -->
+  <g>
+    <rect x="50" y="70" width="200" height="120" rx="10" fill="url(#inputGrad)" stroke="#1976d2" stroke-width="2"/>
+    <text x="150" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1976d2">Input Layer</text>
+    
+    <rect x="65" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#1976d2"/>
+    <text x="105" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">User Input</text>
+    
+    <rect x="155" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#1976d2"/>
+    <text x="195" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Keyboard</text>
+    
+    <rect x="65" y="140" width="80" height="25" rx="5" fill="#ffffff" stroke="#1976d2"/>
+    <text x="105" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">File Ops</text>
+    
+    <rect x="155" y="140" width="80" height="25" rx="5" fill="#ffffff" stroke="#1976d2"/>
+    <text x="195" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Context Sensors</text>
+  </g>
+  
+  <!-- Context Synthesis Layer -->
+  <g>
+    <rect x="320" y="70" width="200" height="120" rx="10" fill="url(#contextGrad)" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="420" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7b1fa2">Context Synthesis</text>
+    
+    <rect x="335" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#7b1fa2"/>
+    <text x="375" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Workspace Analyzer</text>
+    
+    <rect x="425" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#7b1fa2"/>
+    <text x="465" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Context Builder</text>
+    
+    <rect x="380" y="140" width="80" height="25" rx="5" fill="#ffffff" stroke="#7b1fa2"/>
+    <text x="420" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Embedding Engine</text>
+  </g>
+  
+  <!-- AI Processing Layer -->
+  <g>
+    <rect x="590" y="70" width="200" height="120" rx="10" fill="url(#aiGrad)" stroke="#388e3c" stroke-width="2"/>
+    <text x="690" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#388e3c">AI Processing</text>
+    
+    <rect x="605" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#388e3c"/>
+    <text x="645" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Request Router</text>
+    
+    <rect x="695" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#388e3c"/>
+    <text x="735" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Context Injection</text>
+    
+    <rect x="650" y="140" width="80" height="25" rx="5" fill="#ffffff" stroke="#388e3c"/>
+    <text x="690" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Response Process</text>
+  </g>
+  
+  <!-- Output Integration Layer -->
+  <g>
+    <rect x="860" y="70" width="200" height="120" rx="10" fill="url(#outputGrad)" stroke="#f57c00" stroke-width="2"/>
+    <text x="960" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f57c00">Output Integration</text>
+    
+    <rect x="875" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#f57c00"/>
+    <text x="915" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Suggestion Engine</text>
+    
+    <rect x="965" y="105" width="80" height="25" rx="5" fill="#ffffff" stroke="#f57c00"/>
+    <text x="1005" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Code Application</text>
+    
+    <rect x="920" y="140" width="80" height="25" rx="5" fill="#ffffff" stroke="#f57c00"/>
+    <text x="960" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#333">Feedback Loop</text>
+  </g>
+  
+  <!-- External AI Models -->
+  <g>
+    <rect x="590" y="250" width="200" height="100" rx="10" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2"/>
+    <text x="690" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3f51b5">External AI Models</text>
+    
+    <rect x="605" y="290" width="50" height="20" rx="3" fill="#ffffff" stroke="#3f51b5"/>
+    <text x="630" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">GPT-4</text>
+    
+    <rect x="665" y="290" width="50" height="20" rx="3" fill="#ffffff" stroke="#3f51b5"/>
+    <text x="690" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Claude</text>
+    
+    <rect x="725" y="290" width="50" height="20" rx="3" fill="#ffffff" stroke="#3f51b5"/>
+    <text x="750" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Custom</text>
+    
+    <rect x="635" y="320" width="50" height="20" rx="3" fill="#ffffff" stroke="#3f51b5"/>
+    <text x="660" y="334" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Local</text>
+  </g>
+  
+  <!-- Persistence Layer -->
+  <g>
+    <rect x="320" y="250" width="200" height="100" rx="10" fill="#f1f8e9" stroke="#689f38" stroke-width="2"/>
+    <text x="420" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#689f38">Persistence Layer</text>
+    
+    <rect x="335" y="290" width="80" height="20" rx="3" fill="#ffffff" stroke="#689f38"/>
+    <text x="375" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Local Cache</text>
+    
+    <rect x="425" y="290" width="80" height="20" rx="3" fill="#ffffff" stroke="#689f38"/>
+    <text x="465" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Settings</text>
+    
+    <rect x="380" y="320" width="80" height="20" rx="3" fill="#ffffff" stroke="#689f38"/>
+    <text x="420" y="334" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Privacy Manager</text>
+  </g>
+  
+  <!-- User Interface -->
+  <g>
+    <rect x="860" y="250" width="200" height="100" rx="10" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+    <text x="960" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2185b">User Interface</text>
+    
+    <rect x="875" y="290" width="80" height="20" rx="3" fill="#ffffff" stroke="#c2185b"/>
+    <text x="915" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Code Editor</text>
+    
+    <rect x="965" y="290" width="80" height="20" rx="3" fill="#ffffff" stroke="#c2185b"/>
+    <text x="1005" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Chat Interface</text>
+    
+    <rect x="920" y="320" width="80" height="20" rx="3" fill="#ffffff" stroke="#c2185b"/>
+    <text x="960" y="334" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">Inline Suggestions</text>
+  </g>
+  
+  <!-- Data Flow Arrows -->
+  <!-- Input to Context -->
+  <line x1="250" y1="130" x2="320" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Context to AI -->
+  <line x1="520" y1="130" x2="590" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- AI to Output -->
+  <line x1="790" y1="130" x2="860" y2="130" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- AI to External Models -->
+  <line x1="690" y1="190" x2="690" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Context to Persistence -->
+  <line x1="420" y1="190" x2="420" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output to UI -->
+  <line x1="960" y1="190" x2="960" y2="250" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Feedback Loop -->
+  <path d="M 960 350 Q 960 400 800 400 Q 200 400 200 300 Q 200 200 150 200" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Bidirectional arrows -->
+  <!-- Context <-> Persistence -->
+  <line x1="420" y1="250" x2="420" y2="190" stroke="#689f38" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- AI <-> External Models -->
+  <line x1="690" y1="250" x2="690" y2="190" stroke="#3f51b5" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output <-> UI -->
+  <line x1="960" y1="250" x2="960" y2="190" stroke="#c2185b" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- Data Flow Labels -->
+  <text x="285" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Raw Input</text>
+  <text x="555" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Context</text>
+  <text x="825" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">AI Response</text>
+  <text x="710" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">API Calls</text>
+  <text x="440" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Cache/Store</text>
+  <text x="980" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Display</text>
+  
+  <!-- Feedback loop label -->
+  <text x="500" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">User Feedback and Learning Loop</text>
+  
+  <!-- Data Types Legend -->
+  <g>
+    <rect x="50" y="500" width="300" height="250" rx="10" fill="#ffffff" stroke="#ddd" stroke-width="1"/>
+    <text x="200" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Data Types and Flows</text>
+    
+    <circle cx="70" cy="550" r="5" fill="#1976d2"/>
+    <text x="85" y="555" font-family="Arial, sans-serif" font-size="11" fill="#333">Keystrokes, selections, file operations</text>
+    
+    <circle cx="70" cy="575" r="5" fill="#7b1fa2"/>
+    <text x="85" y="580" font-family="Arial, sans-serif" font-size="11" fill="#333">AST, symbols, project structure, embeddings</text>
+    
+    <circle cx="70" cy="600" r="5" fill="#388e3c"/>
+    <text x="85" y="605" font-family="Arial, sans-serif" font-size="11" fill="#333">Prompts with context, AI model responses</text>
+    
+    <circle cx="70" cy="625" r="5" fill="#f57c00"/>
+    <text x="85" y="630" font-family="Arial, sans-serif" font-size="11" fill="#333">Code suggestions, diffs, chat messages</text>
+    
+    <circle cx="70" cy="650" r="5" fill="#689f38"/>
+    <text x="85" y="655" font-family="Arial, sans-serif" font-size="11" fill="#333">Cached embeddings, user preferences</text>
+    
+    <circle cx="70" cy="675" r="5" fill="#c2185b"/>
+    <text x="85" y="680" font-family="Arial, sans-serif" font-size="11" fill="#333">Visual code editor, chat UI elements</text>
+    
+    <circle cx="70" cy="700" r="5" fill="#666"/>
+    <text x="85" y="705" font-family="Arial, sans-serif" font-size="11" fill="#333">User interactions, acceptance/rejection data</text>
+  </g>
+  
+  <!-- Performance Metrics -->
+  <g>
+    <rect x="400" y="500" width="250" height="150" rx="10" fill="#f8f9fa" stroke="#ddd" stroke-width="1"/>
+    <text x="525" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Key Performance Metrics</text>
+    
+    <text x="415" y="545" font-family="Arial, sans-serif" font-size="11" fill="#333">• Response Latency: &lt;100ms (autocomplete)</text>
+    <text x="415" y="560" font-family="Arial, sans-serif" font-size="11" fill="#333">• Context Window: Up to 200K tokens</text>
+    <text x="415" y="575" font-family="Arial, sans-serif" font-size="11" fill="#333">• Cache Hit Rate: ~85% for common patterns</text>
+    <text x="415" y="590" font-family="Arial, sans-serif" font-size="11" fill="#333">• Model Selection: ~50ms routing decision</text>
+    <text x="415" y="605" font-family="Arial, sans-serif" font-size="11" fill="#333">• Suggestion Accuracy: ~70% acceptance rate</text>
+    <text x="415" y="620" font-family="Arial, sans-serif" font-size="11" fill="#333">• Memory Usage: ~2GB for large projects</text>
+  </g>
+  
+  <!-- Security & Privacy Box -->
+  <g>
+    <rect x="700" y="500" width="250" height="150" rx="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+    <text x="825" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e65100">Security and Privacy</text>
+    
+    <text x="715" y="545" font-family="Arial, sans-serif" font-size="11" fill="#333">• Privacy Mode: Local processing only</text>
+    <text x="715" y="560" font-family="Arial, sans-serif" font-size="11" fill="#333">• Data Encryption: End-to-end for cloud</text>
+    <text x="715" y="575" font-family="Arial, sans-serif" font-size="11" fill="#333">• Code Anonymization: Remove PII/secrets</text>
+    <text x="715" y="590" font-family="Arial, sans-serif" font-size="11" fill="#333">• Access Control: Per-project permissions</text>
+    <text x="715" y="605" font-family="Arial, sans-serif" font-size="11" fill="#333">• Audit Logging: All AI interactions</text>
+    <text x="715" y="620" font-family="Arial, sans-serif" font-size="11" fill="#333">• Compliance: SOC2, GDPR ready</text>
+  </g>
+</svg>
