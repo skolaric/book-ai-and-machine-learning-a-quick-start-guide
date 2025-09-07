@@ -66,26 +66,26 @@ The architecture creates a content editing environment where AI assistance feels
 
 The `AIPlatform` editor and platform implements a sophisticated multi-layered data flow that seamlessly integrates AI capabilities with traditional code editing workflows.
 
-![Data Flow](./00-data-flow.svg)
+![Data Flow](./images/00-data-flow.svg)
 
 
 
 #### Input Layer
 **User Interactions** flow through multiple channels: direct text input in the editor, keyboard shortcuts (Ctrl+K for inline AI, Ctrl+L for chat), mouse selections for code highlighting, and file operations like opening, saving, and navigation. **Contextual Sensors** continuously capture workspace state including cursor position, active files, recent edits, and project structure changes.
 
-![Input Layer](./01-input-layer.png)
+![Input Layer](./images/01-input-layer.png)
 
 
 ### Context Synthesis Layer
 The **Workspace Analyzer** continuously processes the current codebase, building semantic understanding through AST parsing, dependency analysis, and symbol resolution. **Context Builder** aggregates relevant information for AI requests, including current file content, related modules, project conventions, and user coding patterns. **Embedding Engine** maintains vector representations of code segments for efficient similarity search and context retrieval.
 
-![Context Synthesis](./02-context-synthesis.png)
+![Context Synthesis](./images/02-context-synthesis.png)
 
 
 ### AI Processing Layer
 **Request Router** intelligently selects appropriate models based on task complexity - lightweight models for autocomplete, powerful models for complex generation. **Context Injection** combines user prompts with synthesized workspace context before sending to AI models. **Response Processing** handles streaming AI responses, parsing code suggestions, and formatting output for editor integration.
 
-![Context Synthesis](./03-ai-processing.png)
+![Context Synthesis](./images/03-ai-processing.png)
 
 
 ### Output Integration Layer
@@ -201,3 +201,95 @@ Built-in experimentation infrastructure enables rapid prototyping and testing of
 MLOps facilitates integration of cutting-edge research developments, with automated systems for evaluating and incorporating new techniques like improved context handling, better code understanding, or enhanced reasoning capabilities.
 
 This comprehensive MLOps implementation enables `AIPlatform` to continuously improve its AI capabilities while maintaining the reliability, performance, and user experience quality expected from professional development tools. The system balances innovation with stability, ensuring that AI assistance becomes more helpful over time while preserving the core editor functionality that developers depend on.
+
+
+
+==========
+
+
+# Concrete Technologies Used for `AIPlatform`
+
+Here is one possible scenario of using specific technologies and infrastructure components that power `AIPlatform`:
+
+## Cloud Infrastructure
+
+**Cloud Providers**
+`AIPlatform`'s infrastructure is hosted on AWS, Microsoft Azure, and Google Cloud Platform (GCP), with most servers in the US and some latency-critical servers in AWS/Azure/GCP regions in Tokyo and Europe (London).
+
+**Content Delivery & Security**
+Cloudflare serves as a reverse proxy in front of parts of their API and website to improve performance and security.
+
+## AI Model Infrastructure
+
+**Custom Model Hosting**
+Custom models are hosted with Fireworks, on servers in the US, Asia (Tokyo), and Europe, with a zero data retention agreement.
+
+**External AI Model APIs**
+The platform integrates multiple AI providers:
+- OpenAI models with zero data retention agreement
+- Anthropic models with zero data retention agreement
+- Google's Gemini models via Cloud Vertex API with zero data retention agreement
+- xAI's Grok models with zero data retention agreement
+
+**Model Training Infrastructure**
+`AIPlatform` uses Databricks MosaicML, Foundry, and Voltage Park for training custom models, with privacy mode user data never reaching these services.
+
+## Vector Database & Search
+
+**Embeddings Storage**
+Embeddings of indexed codebases and obfuscated file names are stored with Turbopuffer on Google Cloud's servers in the US. For public documentation, embeddings and metadata are stored on Pinecone.
+
+**Web Search Integration**
+Exa and SerpApi are used for web search functionality, seeing search requests potentially derived from code data.
+
+## Data & Analytics Stack
+
+**Database Systems**
+MongoDB is used for analytics data for users without privacy mode enabled.
+
+**Monitoring & Observability**
+- Datadog for logging and monitoring, with privacy mode logs containing no code data
+- Sentry to monitor errors and performance, with privacy mode user data never reaching Sentry
+- Amplitude for analytics data, storing only event data like "number of Cursor Tab requests"
+
+## Development & Deployment
+
+**Infrastructure Management**
+HashiCorp Terraform is used to manage infrastructure.
+
+**Client Platform**
+`AIPlatform`'s editor is a fork of the open-source Visual Studio Code, maintained by Microsoft, merging upstream codebase every other mainline VS Code release. VS Code is distributed as proprietary software under the "Microsoft Software License." However, it is built on top of an open-source foundation called "Visual Studio Code – Open Source" (also known as "Code – OSS"), which is licensed under the permissive MIT license. This open-source version is also developed by Microsoft and is available for public access and contribution on GitHub.
+
+**Website & Deployment**
+Vercel is used to deploy the website.
+
+## Business & Collaboration Tools
+
+**Authentication**
+WorkOS handles authentication and may store personal data like name and email address.
+
+**Payment Processing**
+Stripe handles billing and stores personal data including name, credit card, and address.
+
+**Internal Tools**
+- Slack for internal communication
+- Google Workspace for collaboration
+
+## API Endpoints & Networking
+
+**Service Endpoints**
+The platform uses multiple specialized API endpoints:
+- `api2.aiplatform.sh` for most API requests
+- `api3.aiplatform.sh` for `AIPlatform`'s editor Tab requests (HTTP/2 only)
+- `repo42.aiplatform.sh` for codebase indexing (HTTP/2 only)
+- Regional endpoints `api4.aiplatform.sh`, `us-asia.gcpp.aiplatform.sh`, `us-eu.gcpp.aiplatform.sh`, `us-only.gcpp.aiplatform.sh` for location-based `AIPlatform` editor Tab requests
+
+## Privacy & Security Architecture
+
+**Privacy Mode Implementation**
+The system uses an 'x-ghost-mode' header for privacy mode detection, with parallel infrastructure including separate replicas for privacy mode and non-privacy mode requests, and specialized log functions that are no-ops for privacy mode unless suffixed with 'infoUnrestricted'.
+
+**Codebase Indexing Technology**
+The indexing system computes Merkle trees of file hashes, syncs them to servers every 10 minutes, and uses file path obfuscation where paths are split by '/' and '.' with each segment encrypted using a client-stored secret key and deterministic 6-byte nonce.
+
+This technology stack demonstrates a sophisticated multi-cloud, multi-model architecture designed for scalability, performance, and privacy, with redundant systems ensuring reliable AI-powered code assistance across global users.
