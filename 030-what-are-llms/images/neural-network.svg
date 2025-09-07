@@ -1,0 +1,169 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="710" height="500" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2c3e50">Deep Neural Network</text>
+  
+  <!-- Layer Labels -->
+  <text x="80" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34495e">Input Layer</text>
+  <text x="220" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34495e">Hidden Layer 1</text>
+  <text x="360" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34495e">Hidden Layer 2</text>
+  <text x="500" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34495e">Hidden Layer 3</text>
+  <text x="640" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34495e">Output Layer</text>
+  
+  <!-- Input Layer Neurons -->
+  <g id="input-layer">
+    <circle cx="80" cy="120" r="20" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <circle cx="80" cy="180" r="20" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <circle cx="80" cy="240" r="20" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <circle cx="80" cy="300" r="20" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    <circle cx="80" cy="360" r="20" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    
+    <!-- Input labels -->
+    <text x="25" y="125" font-family="Arial, sans-serif" font-size="10" fill="#34495e">x₁</text>
+    <text x="25" y="185" font-family="Arial, sans-serif" font-size="10" fill="#34495e">x₂</text>
+    <text x="25" y="245" font-family="Arial, sans-serif" font-size="10" fill="#34495e">x₃</text>
+    <text x="25" y="305" font-family="Arial, sans-serif" font-size="10" fill="#34495e">x₄</text>
+    <text x="25" y="365" font-family="Arial, sans-serif" font-size="10" fill="#34495e">x₅</text>
+  </g>
+  
+  <!-- Hidden Layer 1 Neurons -->
+  <g id="hidden-layer-1">
+    <circle cx="220" cy="110" r="18" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <circle cx="220" cy="160" r="18" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <circle cx="220" cy="210" r="18" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <circle cx="220" cy="260" r="18" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <circle cx="220" cy="310" r="18" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <circle cx="220" cy="360" r="18" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  </g>
+  
+  <!-- Hidden Layer 2 Neurons -->
+  <g id="hidden-layer-2">
+    <circle cx="360" cy="130" r="18" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    <circle cx="360" cy="180" r="18" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    <circle cx="360" cy="230" r="18" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    <circle cx="360" cy="280" r="18" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+    <circle cx="360" cy="330" r="18" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+  </g>
+  
+  <!-- Hidden Layer 3 Neurons -->
+  <g id="hidden-layer-3">
+    <circle cx="500" cy="150" r="18" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <circle cx="500" cy="210" r="18" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <circle cx="500" cy="270" r="18" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <circle cx="500" cy="330" r="18" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  </g>
+  
+  <!-- Output Layer Neurons -->
+  <g id="output-layer">
+    <circle cx="640" cy="200" r="20" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <circle cx="640" cy="280" r="20" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    
+    <!-- Output labels -->
+    <text x="680" y="205" font-family="Arial, sans-serif" font-size="10" fill="#34495e">y₁</text>
+    <text x="680" y="285" font-family="Arial, sans-serif" font-size="10" fill="#34495e">y₂</text>
+  </g>
+  
+  <!-- Connections from Input to Hidden Layer 1 -->
+  <g id="connections-input-h1" stroke="#7f8c8d" stroke-width="1" opacity="0.6">
+    <!-- Sample connections (showing subset to avoid clutter) -->
+    <line x1="100" y1="120" x2="202" y2="110"/>
+    <line x1="100" y1="120" x2="202" y2="160"/>
+    <line x1="100" y1="120" x2="202" y2="210"/>
+    <line x1="100" y1="180" x2="202" y2="110"/>
+    <line x1="100" y1="180" x2="202" y2="160"/>
+    <line x1="100" y1="180" x2="202" y2="260"/>
+    <line x1="100" y1="240" x2="202" y2="160"/>
+    <line x1="100" y1="240" x2="202" y2="210"/>
+    <line x1="100" y1="240" x2="202" y2="310"/>
+    <line x1="100" y1="300" x2="202" y2="210"/>
+    <line x1="100" y1="300" x2="202" y2="260"/>
+    <line x1="100" y1="300" x2="202" y2="360"/>
+    <line x1="100" y1="360" x2="202" y2="260"/>
+    <line x1="100" y1="360" x2="202" y2="310"/>
+    <line x1="100" y1="360" x2="202" y2="360"/>
+  </g>
+  
+  <!-- Connections from Hidden Layer 1 to Hidden Layer 2 -->
+  <g id="connections-h1-h2" stroke="#7f8c8d" stroke-width="1" opacity="0.6">
+    <line x1="238" y1="110" x2="342" y2="130"/>
+    <line x1="238" y1="110" x2="342" y2="180"/>
+    <line x1="238" y1="160" x2="342" y2="130"/>
+    <line x1="238" y1="160" x2="342" y2="180"/>
+    <line x1="238" y1="160" x2="342" y2="230"/>
+    <line x1="238" y1="210" x2="342" y2="180"/>
+    <line x1="238" y1="210" x2="342" y2="230"/>
+    <line x1="238" y1="210" x2="342" y2="280"/>
+    <line x1="238" y1="260" x2="342" y2="230"/>
+    <line x1="238" y1="260" x2="342" y2="280"/>
+    <line x1="238" y1="310" x2="342" y2="280"/>
+    <line x1="238" y1="310" x2="342" y2="330"/>
+    <line x1="238" y1="360" x2="342" y2="330"/>
+  </g>
+  
+  <!-- Connections from Hidden Layer 2 to Hidden Layer 3 -->
+  <g id="connections-h2-h3" stroke="#7f8c8d" stroke-width="1" opacity="0.6">
+    <line x1="378" y1="130" x2="482" y2="150"/>
+    <line x1="378" y1="180" x2="482" y2="150"/>
+    <line x1="378" y1="180" x2="482" y2="210"/>
+    <line x1="378" y1="230" x2="482" y2="210"/>
+    <line x1="378" y1="230" x2="482" y2="270"/>
+    <line x1="378" y1="280" x2="482" y2="270"/>
+    <line x1="378" y1="280" x2="482" y2="330"/>
+    <line x1="378" y1="330" x2="482" y2="330"/>
+  </g>
+  
+  <!-- Connections from Hidden Layer 3 to Output Layer -->
+  <g id="connections-h3-output" stroke="#7f8c8d" stroke-width="1" opacity="0.6">
+    <line x1="518" y1="150" x2="620" y2="200"/>
+    <line x1="518" y1="210" x2="620" y2="200"/>
+    <line x1="518" y1="210" x2="620" y2="280"/>
+    <line x1="518" y1="270" x2="620" y2="200"/>
+    <line x1="518" y1="270" x2="620" y2="280"/>
+    <line x1="518" y1="330" x2="620" y2="280"/>
+  </g>
+  
+  <!-- Activation Function Symbols -->
+  <g id="activation-symbols" font-family="Arial, sans-serif" font-size="8" fill="#ffffff" text-anchor="middle">
+    <!-- Hidden Layer 1 -->
+    <text x="220" y="113">f</text>
+    <text x="220" y="163">f</text>
+    <text x="220" y="213">f</text>
+    <text x="220" y="263">f</text>
+    <text x="220" y="313">f</text>
+    <text x="220" y="363">f</text>
+    
+    <!-- Hidden Layer 2 -->
+    <text x="360" y="133">f</text>
+    <text x="360" y="183">f</text>
+    <text x="360" y="233">f</text>
+    <text x="360" y="283">f</text>
+    <text x="360" y="333">f</text>
+    
+    <!-- Hidden Layer 3 -->
+    <text x="500" y="153">f</text>
+    <text x="500" y="213">f</text>
+    <text x="500" y="273">f</text>
+    <text x="500" y="333">f</text>
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="50" y="420" width="300" height="60" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+    <text x="200" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">Network Properties</text>
+    <text x="60" y="450" font-family="Arial, sans-serif" font-size="10" fill="#34495e">• Fully connected layers</text>
+    <text x="60" y="462" font-family="Arial, sans-serif" font-size="10" fill="#34495e">• Forward propagation →</text>
+    <text x="200" y="450" font-family="Arial, sans-serif" font-size="10" fill="#34495e">• Activation functions (f)</text>
+    <text x="200" y="462" font-family="Arial, sans-serif" font-size="10" fill="#34495e">• Backpropagation training</text>
+  </g>
+  
+  <!-- Arrow indicating forward flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  <line x1="400" y1="450" x2="480" y2="450" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="440" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c">Forward Pass</text>
+</svg>
