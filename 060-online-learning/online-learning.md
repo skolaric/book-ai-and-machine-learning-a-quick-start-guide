@@ -118,8 +118,72 @@ Here's a generalized framework for implementing online learning in any AI cloud 
 
 This generalized framework allows any AI platform to implement online learning by configuring the domain-specific components while leveraging the universal infrastructure and safety mechanisms. The key is maintaining flexibility in the configuration layer while ensuring robust, safe operation across all domains.
 
+![Data Flow](./images/online-learning.svg)
 
 =====
+
+
+## Overall Architecture
+
+![Data Flow](./images/overall-architecture.svg)
+
+This comprehensive system architecture diagram illustrates how a cloud platform implementing the generalized online learning framework would be structured. Here are the key architectural components:
+
+### Layered Architecture Overview
+
+**1. User Layer (Top)**
+- Multiple interface types: Web, mobile, APIs, dashboards, admin portals
+- Support for external systems, domain experts, and IoT devices
+- Comprehensive access points for all stakeholders
+
+**2. API Gateway & Load Balancer Layer**
+- Centralized entry point with authentication, authorization, and rate limiting
+- SSL termination, request routing, and circuit breaker patterns
+- Comprehensive logging and analytics for all requests
+
+**3. Microservices Layer**
+- Domain-specific services: User management, model serving, configuration
+- Cross-cutting concerns: Workflow orchestration, expert review, monitoring
+- Audit & compliance, notifications, and analytics services
+
+**4. Data Processing & Quality Control Layer**
+- Real-time and batch data ingestion with comprehensive validation
+- Multi-stage quality filtering, transformation, and security measures
+- Data lineage tracking and metadata management
+
+**5. Machine Learning & Online Learning Layer**
+- Core online learning components: Model update engine, memory systems
+- Safety framework with A/B testing and uncertainty quantification
+- MLOps pipeline with experiment tracking and automated deployment
+
+**6. Storage & Data Layer**
+- Multi-modal storage: Object storage, relational, time series, document, graph
+- Caching layer and message queuing for performance
+- Search capabilities for analytics and discovery
+
+**7. Infrastructure & Operations Layer**
+- Container orchestration with Kubernetes and Docker
+- Auto-scaling, service mesh, and comprehensive observability
+- Multi-cloud support with robust backup and disaster recovery
+
+### Key Architectural Features
+
+**Scalability**: Horizontal scaling at every layer with auto-scaling capabilities and load balancing
+
+**Resilience**: Circuit breakers, rollback mechanisms, backup systems, and multi-region deployment
+
+**Security**: End-to-end encryption, RBAC, network policies, and compliance frameworks
+
+**Observability**: Comprehensive monitoring, logging, tracing, and real-time performance indicators
+
+**Flexibility**: Modular microservices architecture allowing independent scaling and updates
+
+**Safety**: Multiple validation gates, A/B testing, and rollback capabilities for safe online learning
+
+The animated indicators show real-time data flow through the system, emphasizing the continuous nature of online learning. The feedback loops (shown in red dashed lines) illustrate how user interactions and system performance continuously improve the platform through the online learning framework.
+
+This architecture can be adapted to any domain by customizing the specific services, data sources, validation rules, and compliance requirements while maintaining the core online learning capabilities.
+
 
 
 ## Case Study: `MediLearn` Assistant
