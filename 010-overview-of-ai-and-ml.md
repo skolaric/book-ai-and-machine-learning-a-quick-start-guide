@@ -2,7 +2,7 @@
 # Overview of AI and ML
 
 ```mermaid
-graph TB
+graph LR
     subgraph AI ["AI"]
         subgraph ML ["ML"]
             subgraph DL ["Deep Learning"]
