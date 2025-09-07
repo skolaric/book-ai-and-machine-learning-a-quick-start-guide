@@ -1,12 +1,17 @@
 
-# AI Programs = Agents
+# Agents
 
-AI programs are intelligent computing modules which can be written (generated) either by a human programmer or by a machine (in the latter case, we are dealing with *machine learning*). In the remainder of this book, we will call an AI program to be an *agent*.
+AI programs are intelligent computing modules which can be written (generated) either by a human programmer or by a machine (in the latter case, we are dealing with *machine learning*). In the remainder of this book, we will call an AI program running on a hardware, to be an *agent*. We can thus write the following to capture the notion that an "agent" is a combination of hardware and software:
 
 ```
-agent = device + program
+agent = hardware + software
 ```
 
+For example, an agent may be:
+- an instance of inteligent software running on an ordinary PC, or 
+- an instance of inteligent software running on a robot hardware.
+
+In the first case, the agent can process input data, and output some data. In the second case, the agent can even move around, since robot hardware offers physical movement capabilities as well. 
 
 
 
@@ -15,6 +20,10 @@ agent = device + program
 ### Plant Watering Agent
 
 In this world model, plants that can be "dry" or "wet." The watering agent (which consists of a hardware robot that moves between rooms containing plants, and the program running on this robot) perceives if the current plant needs water. 
+
+```
+agent = robot hardware + plant_watering_agent() function
+```
 
 The actions are to water the plant, move to another plant, or do nothing. A simple agent tries to water any dry plant it currently detects; if none are dry, it moves to the next plant.
 
@@ -53,6 +62,10 @@ print(action)  # Output: move to plant2
 ### Search Agent
 
 These agents operate in a space of *states*. The agents can move from one state to another in this space. Formally, this space of states can be represented as a set-theoretical graph whose nodes represent states, and edges between nodes represents allowable transitions between states.
+
+```
+agent = computer hardware + search function
+```
 
 An agent starts from a special starting state (called *initial* state), and has to reach any of the *goal states*, while minimizing the total cost.
 

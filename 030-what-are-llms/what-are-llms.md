@@ -1,7 +1,7 @@
 
 # LLM Agents
 
-Large Language Models (LLMs) are currently the most prominent AI modules being used. An LLM is a type of artificial intelligence program that uses deep learning techniques to understand, generate, and predict human language. 
+Among many types of intelligent (AI) software, Large Language Models (LLMs) are currently the most prominent AI modules being used. An LLM is a type of artificial intelligence program that uses deep learning techniques to understand, generate, and predict human language. 
 
 An LLM is trained on massive amounts of text data, allowing it to perform various natural language processing tasks such as answering questions, writing text, and translating languages. 
 
