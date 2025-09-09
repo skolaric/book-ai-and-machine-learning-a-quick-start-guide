@@ -1,10 +1,14 @@
 
-# Agents
+# Agents = Intelligent Software running on a Hardware Device 
 
-AI programs are intelligent computing modules which can be written (generated) either by a human programmer or by a machine (in the latter case, we are dealing with *machine learning*). In the remainder of this book, we will call an AI program running on a hardware, to be an *agent*. We can thus write the following to capture the notion that an "agent" is a combination of hardware and software:
+Agents are artifacts consisting of (1) intelligent software which runs on (2) some hardware device. 
+
+Agents can be written (generated) either by a human programmer or by a machine (in the latter case, we are dealing with *machine learning*). 
+
+In the remainder of this book, we will call an AI program running on a hardware, to be an *agent*. We can thus write the following to capture the notion that an "agent" is a combination of hardware and software:
 
 ```
-agent = hardware + software
+agent = hardware + intelligent software
 ```
 
 For example, an agent may be:
@@ -17,7 +21,7 @@ In the first case, the agent can process input data, and output some data. In th
 
 ## Examples of Agents
 
-### Plant Watering Agent
+### Plant Watering Robot
 
 In this world model, plants that can be "dry" or "wet." The watering agent (which consists of a hardware robot that moves between rooms containing plants, and the program running on this robot) perceives if the current plant needs water. 
 
